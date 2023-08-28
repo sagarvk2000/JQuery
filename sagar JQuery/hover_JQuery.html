@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hover Menu</title>
+
+    <style>
+        .btn {
+            background-color: brown;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .about {
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop-about {
+            display: none;
+            position: absolute;
+            background-color: #cbb5b5;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+            .drop-about a {
+                color: black;
+                display: block;
+                padding: 12px 16px;
+                text-decoration: none;
+            }
+
+                .drop-about a:hover {
+                    color: brown;
+                }
+
+        .about:hover .drop-about {
+            display:block;
+        }
+
+        .about:hover .btn {
+            background-color: #04AA6D;
+        }
+
+        .subnav {
+            margin-left: 50px;
+        }
+
+        .mainNav {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <nav class="mainNav">
+        <div class="about subnav">
+            <button class="btn">
+                Home
+            </button>
+        </div>
+
+        <div class="about subnav">
+            <button class="btn">
+                About Us
+            </button>
+            <div class="drop-about">
+                <a href="#">Company Info</a><br />
+                <a href="#">Founder</a><br />
+                <a href="#">Location</a><br />
+            </div>
+        </div>
+        <div class="about subnav">
+            <button class="btn">
+                Contact Us
+            </button>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .oop {
+            font-size: 120%;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <button>Toggle class</button>
+    <h1>This is Heading.</h1>
+    <h2>  this is h2  </h2>
+    <p>This is a paragraph.</p>
+    <p><b>Note:</b> Set your goals so high that your failure is greater than others success.</p>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p,h1,h2").toggleClass("oop");
+            });
+        });
+    </script>
+
+
+</body>
+</html>
